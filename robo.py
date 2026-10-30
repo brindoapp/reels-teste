@@ -41,6 +41,17 @@ def fila(conta):
     return [(a, leg.replace("\\n", "\n")) for a, leg in linhas if a not in feitos]
 
 
+def achar_ig(conta, token):
+    """ID da conta do Instagram pelo @ salvo em contas/<conta>/usuario.txt (as páginas que o token enxerga)."""
+    usuario = open(os.path.join(pasta(conta), "usuario.txt"), encoding="utf-8").read().strip().lstrip("@")
+    pags = chamar("GET", "me/accounts", fields="name,instagram_business_account{id,username}", limit=100, access_token=token)
+    for p in pags.get("data", []):
+        ig = p.get("instagram_business_account") or {}
+        if ig.get("username", "").lower() == usuario.lower():
+            return ig["id"]
+    raise SystemExit(f"{conta}: o token não enxerga o Instagram @{usuario} (páginas: {[p.get('name') for p in pags.get('data', [])]})")
+
+
 def postar(conta):
     pend = fila(conta)
     if not pend:
@@ -48,8 +59,9 @@ def postar(conta):
     arquivo, legenda = pend[0]
     chave = conta.upper()
     ig, token = os.environ.get(f"IG_USER_ID_{chave}"), os.environ.get(f"IG_TOKEN_{chave}")
-    if not (ig and token):
-        print(f"{conta}: sem IG_USER_ID_{chave}/IG_TOKEN_{chave}; nada postado"); return
+    if not token:
+        print(f"{conta}: sem IG_TOKEN_{chave}; nada postado"); return
+    ig = ig or achar_ig(conta, token)
     url = f"{SITE}/contas/{conta}/midia/{urllib.parse.quote(arquivo)}"
     c = chamar("POST", f"{ig}/media", media_type="REELS", video_url=url, caption=legenda,
                trial_params=json.dumps(TRIAL), access_token=token)
