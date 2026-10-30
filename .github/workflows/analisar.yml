@@ -1,0 +1,32 @@
+name: Métricas, radar e painel
+on:
+  schedule:
+    - cron: "0 10 * * *"  # 07h de Brasília
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: analisar
+jobs:
+  rodar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      IG_USER_ID_LEELEO: ${{ secrets.IG_USER_ID_LEELEO }}
+      IG_TOKEN_LEELEO: ${{ secrets.IG_TOKEN_LEELEO }}
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      TELEGRAM_CHAT: ${{ secrets.TELEGRAM_CHAT }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python robo.py metricas leeleo
+      - run: python robo.py radar leeleo
+        continue-on-error: true
+      - run: python robo.py painel leeleo
+      - name: Guardar
+        run: |
+          git config user.name "robo-reels"
+          git config user.email "robo-reels@users.noreply.github.com"
+          git add contas/*/metricas.json contas/*/seguidores.tsv contas/*/vencedores.tsv contas/*/radar.tsv contas/*/painel.html
+          git diff --cached --quiet || (git commit -m "analisar $(date -u +%F_%H%M)" && git pull --rebase && git push)

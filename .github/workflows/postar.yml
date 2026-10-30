@@ -37,4 +37,4 @@ jobs:
           git config user.name "robo-reels"
           git config user.email "robo-reels@users.noreply.github.com"
           git add contas/*/feitos.tsv
-          git diff --cached --quiet || (git commit -m "postado $(date -u +%F_%H%M)" && git push)
+          git diff --cached --quiet || (git commit -m "postado $(date -u +%F_%H%M)" && git pull --rebase && git push)
