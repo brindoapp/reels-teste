@@ -1,4 +1,25 @@
 {
- "quando": "2026-10-31 10:25",
- "reels": {}
+ "quando": "2026-11-01 10:28",
+ "reels": {
+  "02_sonhos_namora.mp4": {
+   "views": 324,
+   "reach": 282,
+   "likes": 3,
+   "comments": 0,
+   "shares": 1,
+   "saved": 0,
+   "total_interactions": 4,
+   "ig_reels_avg_watch_time": 3405
+  },
+  "03_livramento_sou_eu.mp4": {
+   "views": 2207,
+   "reach": 1622,
+   "likes": 33,
+   "comments": 2,
+   "shares": 3,
+   "saved": 5,
+   "total_interactions": 49,
+   "ig_reels_avg_watch_time": 5385
+  }
+ }
 }
