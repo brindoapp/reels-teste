@@ -1,25 +1,125 @@
 {
- "quando": "2026-11-01 10:28",
+ "quando": "2026-11-02 10:49",
  "reels": {
   "02_sonhos_namora.mp4": {
-   "views": 324,
-   "reach": 282,
+   "views": 326,
+   "reach": 283,
    "likes": 3,
    "comments": 0,
    "shares": 1,
    "saved": 0,
    "total_interactions": 4,
-   "ig_reels_avg_watch_time": 3405
+   "ig_reels_avg_watch_time": 3420
   },
   "03_livramento_sou_eu.mp4": {
-   "views": 2207,
-   "reach": 1622,
+   "views": 2232,
+   "reach": 1644,
    "likes": 33,
    "comments": 2,
    "shares": 3,
    "saved": 5,
    "total_interactions": 49,
-   "ig_reels_avg_watch_time": 5385
+   "ig_reels_avg_watch_time": 5340
+  },
+  "04_ignorado.mp4": {
+   "views": 2017,
+   "reach": 1601,
+   "likes": 32,
+   "comments": 0,
+   "shares": 6,
+   "saved": 2,
+   "total_interactions": 43,
+   "ig_reels_avg_watch_time": 4752
+  },
+  "05_esqueco_ou_espero.mp4": {
+   "views": 394,
+   "reach": 312,
+   "likes": 5,
+   "comments": 0,
+   "shares": 6,
+   "saved": 0,
+   "total_interactions": 12,
+   "ig_reels_avg_watch_time": 3948
+  },
+  "06_triste_sem_mim.mp4": {
+   "views": 689,
+   "reach": 557,
+   "likes": 6,
+   "comments": 0,
+   "shares": 11,
+   "saved": 3,
+   "total_interactions": 20,
+   "ig_reels_avg_watch_time": 4396
+  },
+  "07_me_iludo_primeiro.mp4": {
+   "views": 2110,
+   "reach": 1478,
+   "likes": 79,
+   "comments": 0,
+   "shares": 12,
+   "saved": 1,
+   "total_interactions": 95,
+   "ig_reels_avg_watch_time": 5667
+  },
+  "08_grupo_alcoolatra.mp4": {
+   "views": 1382,
+   "reach": 1134,
+   "likes": 30,
+   "comments": 2,
+   "shares": 35,
+   "saved": 3,
+   "total_interactions": 71,
+   "ig_reels_avg_watch_time": 4571
+  },
+  "09_musica_manha.mp4": {
+   "views": 231,
+   "reach": 193,
+   "likes": 3,
+   "comments": 0,
+   "shares": 0,
+   "saved": 0,
+   "total_interactions": 3,
+   "ig_reels_avg_watch_time": 3141
+  },
+  "10_amigo_solteiro.mp4": {
+   "views": 1836,
+   "reach": 1498,
+   "likes": 19,
+   "comments": 0,
+   "shares": 7,
+   "saved": 1,
+   "total_interactions": 28,
+   "ig_reels_avg_watch_time": 4748
+  },
+  "11_vida_curta.mp4": {
+   "views": 391,
+   "reach": 337,
+   "likes": 1,
+   "comments": 0,
+   "shares": 0,
+   "saved": 0,
+   "total_interactions": 1,
+   "ig_reels_avg_watch_time": 3867
+  },
+  "12_dez_mulheres.mp4": {
+   "views": 493,
+   "reach": 414,
+   "likes": 4,
+   "comments": 0,
+   "shares": 0,
+   "saved": 0,
+   "total_interactions": 4,
+   "ig_reels_avg_watch_time": 4102
+  },
+  "13_sinica_banheiro.mp4": {
+   "views": 2698,
+   "reach": 1897,
+   "likes": 77,
+   "comments": 2,
+   "shares": 13,
+   "saved": 9,
+   "total_interactions": 103,
+   "ig_reels_avg_watch_time": 6420
   }
  }
 }
