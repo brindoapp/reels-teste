@@ -1,35 +1,35 @@
 {
- "quando": "2026-11-03 10:47",
+ "quando": "2026-11-04 10:59",
  "reels": {
   "02_sonhos_namora.mp4": {
-   "views": 331,
-   "reach": 286,
+   "views": 332,
+   "reach": 287,
    "likes": 3,
    "comments": 0,
    "shares": 1,
    "saved": 0,
    "total_interactions": 4,
-   "ig_reels_avg_watch_time": 3430
+   "ig_reels_avg_watch_time": 3425
   },
   "03_livramento_sou_eu.mp4": {
-   "views": 2240,
-   "reach": 1651,
+   "views": 2241,
+   "reach": 1652,
    "likes": 33,
    "comments": 2,
    "shares": 3,
    "saved": 5,
    "total_interactions": 49,
-   "ig_reels_avg_watch_time": 5332
+   "ig_reels_avg_watch_time": 5333
   },
   "04_ignorado.mp4": {
-   "views": 2051,
-   "reach": 1639,
+   "views": 2053,
+   "reach": 1643,
    "likes": 32,
    "comments": 0,
    "shares": 6,
    "saved": 2,
    "total_interactions": 43,
-   "ig_reels_avg_watch_time": 4735
+   "ig_reels_avg_watch_time": 4741
   },
   "05_esqueco_ou_espero.mp4": {
    "views": 398,
@@ -42,7 +42,7 @@
    "ig_reels_avg_watch_time": 3929
   },
   "06_triste_sem_mim.mp4": {
-   "views": 693,
+   "views": 694,
    "reach": 559,
    "likes": 6,
    "comments": 0,
@@ -52,24 +52,24 @@
    "ig_reels_avg_watch_time": 4394
   },
   "07_me_iludo_primeiro.mp4": {
-   "views": 2117,
-   "reach": 1487,
+   "views": 2124,
+   "reach": 1493,
    "likes": 79,
    "comments": 0,
    "shares": 12,
    "saved": 1,
    "total_interactions": 95,
-   "ig_reels_avg_watch_time": 5653
+   "ig_reels_avg_watch_time": 5648
   },
   "08_grupo_alcoolatra.mp4": {
-   "views": 1439,
-   "reach": 1184,
+   "views": 1446,
+   "reach": 1190,
    "likes": 30,
    "comments": 2,
    "shares": 37,
    "saved": 3,
    "total_interactions": 73,
-   "ig_reels_avg_watch_time": 4529
+   "ig_reels_avg_watch_time": 4514
   },
   "09_musica_manha.mp4": {
    "views": 233,
@@ -82,8 +82,8 @@
    "ig_reels_avg_watch_time": 3118
   },
   "10_amigo_solteiro.mp4": {
-   "views": 1841,
-   "reach": 1502,
+   "views": 1842,
+   "reach": 1503,
    "likes": 20,
    "comments": 0,
    "shares": 7,
@@ -112,14 +112,14 @@
    "ig_reels_avg_watch_time": 4102
   },
   "13_sinica_banheiro.mp4": {
-   "views": 2821,
-   "reach": 1953,
-   "likes": 78,
+   "views": 2842,
+   "reach": 1977,
+   "likes": 79,
    "comments": 2,
    "shares": 14,
    "saved": 9,
-   "total_interactions": 105,
-   "ig_reels_avg_watch_time": 6434
+   "total_interactions": 106,
+   "ig_reels_avg_watch_time": 6423
   },
   "14_indireta.mp4": {
    "views": 1178,
@@ -132,14 +132,14 @@
    "ig_reels_avg_watch_time": 5127
   },
   "15_musica_de_velho.mp4": {
-   "views": 678,
-   "reach": 554,
+   "views": 688,
+   "reach": 565,
    "likes": 14,
    "comments": 0,
    "shares": 0,
    "saved": 0,
    "total_interactions": 15,
-   "ig_reels_avg_watch_time": 4288
+   "ig_reels_avg_watch_time": 4268
   },
   "16_nao_olhe.mp4": {
    "views": 697,
@@ -152,37 +152,37 @@
    "ig_reels_avg_watch_time": 5920
   },
   "17_apartamento_salgado.mp4": {
-   "views": 2017,
-   "reach": 1607,
+   "views": 2028,
+   "reach": 1616,
    "likes": 30,
    "comments": 0,
    "shares": 15,
    "saved": 0,
    "total_interactions": 45,
-   "ig_reels_avg_watch_time": 4714
+   "ig_reels_avg_watch_time": 4712
   },
   "18_trocar_amigos.mp4": {
-   "views": 1764,
-   "reach": 1404,
+   "views": 1768,
+   "reach": 1408,
    "likes": 55,
    "comments": 0,
    "shares": 6,
    "saved": 1,
    "total_interactions": 66,
-   "ig_reels_avg_watch_time": 4893
+   "ig_reels_avg_watch_time": 4885
   },
   "19_dois_esquemas.mp4": {
-   "views": 2649,
-   "reach": 2057,
+   "views": 2662,
+   "reach": 2068,
    "likes": 29,
    "comments": 0,
    "shares": 7,
    "saved": 2,
    "total_interactions": 40,
-   "ig_reels_avg_watch_time": 4619
+   "ig_reels_avg_watch_time": 4617
   },
   "20_peixe_sexta.mp4": {
-   "views": 1328,
+   "views": 1329,
    "reach": 1044,
    "likes": 4,
    "comments": 0,
@@ -202,24 +202,124 @@
    "ig_reels_avg_watch_time": 4093
   },
   "22_de_boa.mp4": {
-   "views": 800,
-   "reach": 668,
+   "views": 801,
+   "reach": 669,
    "likes": 13,
    "comments": 0,
    "shares": 3,
    "saved": 2,
    "total_interactions": 18,
-   "ig_reels_avg_watch_time": 4332
+   "ig_reels_avg_watch_time": 4328
   },
   "24_playlist_sabe.mp4": {
-   "views": 195,
-   "reach": 179,
+   "views": 196,
+   "reach": 180,
    "likes": 3,
    "comments": 0,
    "shares": 0,
    "saved": 0,
    "total_interactions": 3,
-   "ig_reels_avg_watch_time": 3786
+   "ig_reels_avg_watch_time": 3856
+  },
+  "25_praia_esquecer_mar.mp4": {
+   "views": 265,
+   "reach": 226,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0,
+   "saved": 0,
+   "total_interactions": 0,
+   "ig_reels_avg_watch_time": 6080
+  },
+  "26_saiu_sem_pagar.mp4": {
+   "views": 205,
+   "reach": 180,
+   "likes": 1,
+   "comments": 0,
+   "shares": 0,
+   "saved": 0,
+   "total_interactions": 1,
+   "ig_reels_avg_watch_time": 4464
+  },
+  "27_cafe_esfriou.mp4": {
+   "views": 239,
+   "reach": 210,
+   "likes": 4,
+   "comments": 0,
+   "shares": 0,
+   "saved": 0,
+   "total_interactions": 4,
+   "ig_reels_avg_watch_time": 4098
+  },
+  "28_achando_que_era_pix.mp4": {
+   "views": 224,
+   "reach": 203,
+   "likes": 6,
+   "comments": 0,
+   "shares": 0,
+   "saved": 0,
+   "total_interactions": 6,
+   "ig_reels_avg_watch_time": 4851
+  },
+  "29_pra_sempre_carnaval.mp4": {
+   "views": 153,
+   "reach": 143,
+   "likes": 1,
+   "comments": 0,
+   "shares": 0,
+   "saved": 0,
+   "total_interactions": 2,
+   "ig_reels_avg_watch_time": 2995
+  },
+  "30_nunca_troquei_numero.mp4": {
+   "views": 290,
+   "reach": 262,
+   "likes": 2,
+   "comments": 0,
+   "shares": 0,
+   "saved": 0,
+   "total_interactions": 2,
+   "ig_reels_avg_watch_time": 5102
+  },
+  "31_duas_da_manha_sem_sono.mp4": {
+   "views": 227,
+   "reach": 209,
+   "likes": 2,
+   "comments": 0,
+   "shares": 0,
+   "saved": 0,
+   "total_interactions": 2,
+   "ig_reels_avg_watch_time": 3292
+  },
+  "33_tentando_gostar_outra.mp4": {
+   "views": 665,
+   "reach": 605,
+   "likes": 10,
+   "comments": 0,
+   "shares": 0,
+   "saved": 2,
+   "total_interactions": 13,
+   "ig_reels_avg_watch_time": 4392
+  },
+  "34_ultima_noite_juro.mp4": {
+   "views": 177,
+   "reach": 160,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0,
+   "saved": 0,
+   "total_interactions": 0,
+   "ig_reels_avg_watch_time": 3914
+  },
+  "36_violao_baterista.mp4": {
+   "views": 255,
+   "reach": 226,
+   "likes": 2,
+   "comments": 0,
+   "shares": 0,
+   "saved": 0,
+   "total_interactions": 2,
+   "ig_reels_avg_watch_time": 5432
   }
  }
 }
