@@ -20,6 +20,11 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 SITE = os.environ.get("SITE_URL", "https://brindoapp.github.io/reels-teste")
 TRIAL = {"graduation_strategy": "MANUAL"}  # contrato do Lê e Léo: nunca virar Reel normal sozinho
 METRICAS = "views,reach,likes,comments,shares,saved,total_interactions,ig_reels_avg_watch_time"
+# comentário fixo de cada Reel: o @ clicável para seguir (variação diferente a cada post)
+CHAMADAS = ["Segue a gente 👉 @{u}", "Segue @{u} pra não perder o próximo 🤠", "Gostou? Segue @{u} 🎶",
+            "Já segue @{u}? 👀", "Segue @{u} que amanhã tem mais 😂", "Tá esperando o quê? Segue @{u} 🔥",
+            "Marca o amigo e segue @{u} 👇", "Quem segue @{u} tá avisado 🤠", "Segue @{u} e manda pro grupo 😂",
+            "Siga @{u} 🎤"]
 MAX_RESPOSTAS = 15  # por rodada: responder demais de uma vez parece robô para o Instagram
 
 
@@ -99,7 +104,20 @@ def postar(conta):
         raise SystemExit(f"{arquivo}: o Instagram não terminou de processar em 10 min")
     pub = chamar("POST", f"{ig}/media_publish", creation_id=cid, access_token=token)
     anotar(conta, "feitos.tsv", arquivo, pub["id"], time.strftime("%Y-%m-%d %H:%M"))
+    comentar_chamada(conta, pub["id"], token, len(ler_tsv(conta, "feitos.tsv")))
     print(f"{conta}: {arquivo} publicado como Reel de TESTE (id {pub['id']}). Faltam {len(pend) - 1}.")
+
+
+def chamada(conta, n):
+    usuario = open(os.path.join(pasta(conta), "usuario.txt"), encoding="utf-8").read().strip().lstrip("@")
+    return CHAMADAS[n % len(CHAMADAS)].format(u=usuario)
+
+
+def comentar_chamada(conta, media_id, token, n):
+    try:  # o Reel já saiu: falha no comentário não pode derrubar a postagem
+        chamar("POST", f"{media_id}/comments", message=chamada(conta, n), access_token=token)
+    except SystemExit as e:
+        print(f"{conta}: comentário com o @ não saiu ({e})")
 
 
 def pontos(m):
@@ -262,6 +280,8 @@ def test():
     assert [o[1] for o in outliers("u", [{"like_count": 10, "permalink": "p"}] * 5 + [{"like_count": 90, "permalink": "viral"}])] == ["viral"]
     assert resposta_para("quero o modão!", [("MODÃO", "toma")], ["oi"]) == ("toma", "Te mandei no direct 🤠")
     assert resposta_para("kkk", [("MODÃO", "toma")], ["oi"]) == (None, "oi")
+    open(os.path.join(d, "contas", "x", "usuario.txt"), "w").write("@dupla")
+    assert chamada("x", 0) == "Segue a gente 👉 @dupla" and chamada("x", 1) != chamada("x", 0)
     painel("x"); assert os.path.exists(os.path.join(d, "contas", "x", "painel.html"))
     shutil.rmtree(d); print("ok")
 
